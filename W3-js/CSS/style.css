@@ -1,0 +1,145 @@
+*{
+  margin:0;
+  padding:0;
+  font-size:20px;
+  background-color: #f6f6f6;
+  box-sizing: border-box;
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+.title{
+  font-size: 40px;
+  background-color: #276678;
+  margin: 0 0 3.5% 0;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.title{
+  background-color: #276678;
+  color:white;
+  text-align: center;
+  line-height: 200px;
+  height: 200px;
+}
+
+.burger{
+  display: none;
+}
+
+.burger>p{
+  width: 25px;
+  height:3px;
+  background-color:black;
+  margin:5px;
+}
+
+img{
+  max-width:auto;
+  max-height:75%;
+  /* width: 100% */
+  /* object-fit: cover; */
+  /* overflow: hidden; */
+  /* text-align: justify; */
+  display: inline-block;
+  position: relative
+
+}
+
+
+div{  /*項目*/
+  /* flex:none; */
+  width: 270px;
+  margin:12px;
+  background-color:#d9ecf2;
+  text-align: center;
+  height: 270px; 
+  line-height: 30px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap:wrap;
+
+  overflow: hidden;
+
+}
+
+
+#list{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap:wrap;
+
+}
+
+
+
+/* pad 600px~1200px > 2 col > stretch */
+@media (max-width: 1200px) {
+.title{
+  height: auto;
+}
+#list{
+  width: auto;
+  padding: 5%;
+}
+div{
+  width: 45%;
+  height: auto;
+}
+img{
+  width: 100%;
+  height: auto;
+
+}
+
+.nav-links{
+  width: 40%;
+}
+
+}
+
+/* Phone <=600px > 1 col > stretch  */
+@media (max-width: 600px) {
+
+div{
+  width: 90%;
+  height: auto;
+}
+h1{
+  font-size: 30px;
+}
+
+
+.nav-links{
+  display: none;
+}
+
+
+.burger{
+  display: block;
+  cursor:pointer;
+}
+
+}
